@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, classification_report
 
 # ===== Step 1: Load and Prepare Data =====
 print("[INFO] Loading dataset...")
-data = pd.read_csv("fake_or_real_news.csv")
+data = pd.read_csv("fake_or_real_news.csv") #change you news path 
 
 # Encode labels: REAL → 0, FAKE → 1
 data['fake'] = data['label'].apply(lambda x: 0 if x == "REAL" else 1)
